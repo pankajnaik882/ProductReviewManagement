@@ -13,5 +13,9 @@ namespace ProductReviewManagement
         public int Rating { get; set; }
         public string Review { get; set; }
         public bool IsLike { get; set; }
+        public override string ToString()
+        {
+            return $"UserId: {UserId} ProductId: {ProductId} Rating: {Rating} Review: {Review} IsLike: {IsLike}";
+        }
     }
 }
