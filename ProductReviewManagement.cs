@@ -17,8 +17,15 @@ namespace ProductReviewManagement
             Console.WriteLine("\nUsing method Syntax");
             List<ProductReview> sortedInDesending = list.OrderByDescending(p => p.Rating).Take(3).ToList();
             Program.DisplayProductReviews(sortedInDesending);
-            Console.WriteLine("\n\nUsing Query Syntax");
-            List<ProductReview> result = (from product in list orderby product.Rating descending select product).Take(3).ToList();
+        }
+
+        /// <summary>
+        /// UC3- Retrieve all record from the list who’s rating are greater then 3 and productID is 1 or 4 or 9 using LINQ
+        /// </summary>
+        /// <param name="list"></param>
+        public static void FetchRecordsBasedOnRatingAndProductId(List<ProductReview> list)
+        {
+            List<ProductReview> result = list.Where(p => p.Rating > 3 && p.ProductId == 1 || p.ProductId == 4 || p.ProductId == 9).ToList();
             Program.DisplayProductReviews(result);
         }
     }
