@@ -67,6 +67,12 @@ namespace ProductReviewManagement
                         ProductReviewManagement.FindingEachCountOfProductId(list);
                         Console.Write("\nPress any key to continue...... ");
                         break;
+                    case 5:
+                        Console.Clear();
+                        Console.WriteLine("Disply ProductId and Review:-\n-----------------------------------");
+                        ProductReviewManagement.DisplayProductIdAndReview(list);
+                        Console.Write("\nPress any key to continue...... ");
+                        break;
                     case 15:
                         Console.Clear();
                         break;
