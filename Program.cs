@@ -89,6 +89,12 @@ namespace ProductReviewManagement
                         ProductReviewManagement.FindRecordsWhoseIsLikeValueIsTrue(list);
                         Console.Write("\nPress any key to continue...... ");
                         break;
+                    case 9:
+                        Console.Clear();
+                        Console.WriteLine("Finding average rating of each ProductId are:-\n-----------------------------------------");
+                        ProductReviewManagement.FindAverageRecords(list);
+                        Console.Write("\nPress any key to continue...... ");
+                        break;
                     case 15:
                         Console.Clear();
                         break;

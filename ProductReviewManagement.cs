@@ -75,5 +75,15 @@ namespace ProductReviewManagement
             Program.DisplayProductReviews(result);
         }
 
+        /// <summary>
+        /// UC9- Find average rating of the each productId using LINQ
+        /// </summary>
+        /// <param name="list"></param>
+        public static void FindAverageRecords(List<ProductReview> list)
+        {
+            var result = list.Average(p => p.Rating);
+            Console.WriteLine("Average records are: {0}", result);
+        }
+
     }
 }
