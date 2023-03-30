@@ -84,6 +84,14 @@ namespace ProductReviewManagement
             var result = list.Average(p => p.Rating);
             Console.WriteLine("Average records are: {0}", result);
         }
-
+        // <summary>
+        /// UC10- Retreive all records from the list who’s review message contain “nice” in it using LINQ.
+        /// </summary>
+        /// <param name="list"></param>
+        public static void FindRecordsContainMessageNice(List<ProductReview> list)
+        {
+            List<ProductReview> result = list.Where(p => p.Review.Contains("Nice")).ToList();
+            Program.DisplayProductReviews(result);
+        }
     }
 }

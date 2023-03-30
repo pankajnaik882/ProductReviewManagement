@@ -43,6 +43,8 @@ namespace ProductReviewManagement
                     "5.DisplayProductIdAndReview\n" +
                     "6.SkipTop5Records\n" +
                     "8.FindRecordsWhoseIsLikeValueIsTrue\n" +
+                    "9.FindAverageRecords\n" +
+                    "10.FindRecordsContainMessageNice\n" +
                     "15.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
