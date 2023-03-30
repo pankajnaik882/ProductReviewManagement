@@ -61,6 +61,12 @@ namespace ProductReviewManagement
                         ProductReviewManagement.FetchRecordsBasedOnRatingAndProductId(list);
                         Console.Write("\nPress any key to continue...... ");
                         break;
+                    case 4:
+                        Console.Clear();
+                        Console.WriteLine("Finding Each count of ProductId are:-\n-----------------------------------");
+                        ProductReviewManagement.FindingEachCountOfProductId(list);
+                        Console.Write("\nPress any key to continue...... ");
+                        break;
                     case 15:
                         Console.Clear();
                         break;
