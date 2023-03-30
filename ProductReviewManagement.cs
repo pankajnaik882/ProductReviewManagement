@@ -54,5 +54,15 @@ namespace ProductReviewManagement
                 Console.WriteLine("ProductId: " + item.Id + " ->  " + "Review: " + item.Review);
             }
         }
+
+        /// <summary>
+        /// UC6- skip top 5 records from the list using LINQ and display other record
+        /// </summary>
+        /// <param name="list"></param>
+        public static void SkipTop5Records(List<ProductReview> list)
+        {
+            List<ProductReview> result = list.Skip(5).ToList();
+            Program.DisplayProductReviews(result);
+        }
     }
 }

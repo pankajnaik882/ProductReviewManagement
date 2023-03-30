@@ -81,6 +81,12 @@ namespace ProductReviewManagement
                         Console.WriteLine("select only valid options");
                         Console.Write("\nPress any key to continue...... ");
                         break;
+                    case 6:
+                        Console.Clear();
+                        Console.WriteLine("Remaining records after skip top five records:-\n------------------------------------------------------");
+                        ProductReviewManagement.SkipTop5Records(list);
+                        Console.Write("\nPress any key to continue...... ");
+                        break;
                 }
                 Console.ReadLine();
             }
